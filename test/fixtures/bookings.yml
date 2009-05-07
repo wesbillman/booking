@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  studio_id: 1
+  start: 2009-05-06 19:29:03
+  end: 2009-05-06 19:29:03
+
+two:
+  user_id: 1
+  studio_id: 1
+  start: 2009-05-06 19:29:03
+  end: 2009-05-06 19:29:03

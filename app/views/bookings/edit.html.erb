@@ -1,0 +1,28 @@
+<h1>Editing booking</h1>
+
+<% form_for(@booking) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :studio_id %><br />
+    <%= f.text_field :studio_id %>
+  </p>
+  <p>
+    <%= f.label :start %><br />
+    <%= f.datetime_select :start %>
+  </p>
+  <p>
+    <%= f.label :end %><br />
+    <%= f.datetime_select :end %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @booking %> |
+<%= link_to 'Back', bookings_path %>

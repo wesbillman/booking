@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @studio.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @studio.description %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @studio.price %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h @studio.size %>
+</p>
+
+
+<%= link_to 'Edit', edit_studio_path(@studio) %> |
+<%= link_to 'Back', studios_path %>

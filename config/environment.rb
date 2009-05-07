@@ -6,6 +6,8 @@ RAILS_GEM_VERSION = '2.3.2' unless defined? RAILS_GEM_VERSION
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
+DO_NOT_REPLY = "donotreply@example.com"
+
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
 
@@ -25,6 +27,10 @@ Rails::Initializer.run do |config|
              :lib => 'will_paginate', 
              :source => 'http://gems.github.com', 
              :version => '~> 2.3.8'
+  config.gem "thoughtbot-clearance", 
+              :lib => 'clearance', 
+              :source => 'http://gems.github.com', 
+              :version => '0.6.2'
   
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
